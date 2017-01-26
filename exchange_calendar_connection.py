@@ -4,10 +4,10 @@ from pyexchange import Exchange2010Service
 from pyexchange import ExchangeNTLMAuthConnection
 from pytz import timezone
 
-FILE_PATH = os.path.dirname(os.path.abspath(__file__))
+FILE_PATH = os.path.dirname(os.path.abspath(__file__)) + "/"
 URL = u'https://mail.ist.com/ews/exchange.asmx'
-USERNAME = u'IST\pieem'
-PASSWORD = open(FILE_PATH + "/" + ".password", "r").read()[:-1]
+USERNAME = open(FILE_PATH + ".username", "r").read()[:-1]
+PASSWORD = open(FILE_PATH + ".password", "r").read()[:-1]
 TIMEZONE = timezone("Europe/Stockholm")
 
 
