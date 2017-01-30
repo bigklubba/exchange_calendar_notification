@@ -17,7 +17,8 @@ def main():
         agenda_s += event_info
         agenda_s += "\n\n"
 
-    notification = NotifyViewer("Agenda", agenda_s)
+    # Remove last line break
+    notification = NotifyViewer("Agenda", agenda_s[:-2])
     notification.run()
 
 if __name__ == '__main__':
