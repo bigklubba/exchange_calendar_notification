@@ -15,7 +15,7 @@ def main():
     agenda_s = ""
     for event_info in agenda_events_info:
         agenda_s += event_info
-        agenda_s += "\n"
+        agenda_s += "\n\n"
 
     notification = NotifyViewer("Agenda", agenda_s)
     notification.run()
